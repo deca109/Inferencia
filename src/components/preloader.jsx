@@ -26,6 +26,31 @@ const Preloader = ({ onLoadingComplete, loadingProgress = 0 }) => {
     return () => clearInterval(timer);
   }, [loadingProgress, onLoadingComplete]);
 
+  // Create stars with consistent animation settings
+  const renderStars = () => {
+    return Array.from({ length: 100 }).map((_, i) => {
+      // Fixed duration range for consistent medium pace
+      const animationDuration = 4 + (i % 3); // 4, 5, or 6 seconds
+      const animationDelay = (i % 5) * 0.8; // 0, 0.8, 1.6, 2.4, or 3.2 seconds
+      const size = 1 + Math.random() * 2; // Size between 1-3px
+      
+      return (
+        <div
+          key={i}
+          className="absolute rounded-full bg-white"
+          style={{
+            width: `${size}px`,
+            height: `${size}px`,
+            top: `${Math.random() * 100}%`,
+            left: `${Math.random() * 100}%`,
+            opacity: 0.2 + Math.random() * 0.6, // Between 0.2-0.8
+            animation: `twinkle ${animationDuration}s infinite ${animationDelay}s`,
+          }}
+        />
+      );
+    });
+  };
+
   return (
     <motion.div
       className="fixed inset-0 z-[1000] flex flex-col items-center justify-center bg-black h-full"
@@ -33,30 +58,18 @@ const Preloader = ({ onLoadingComplete, loadingProgress = 0 }) => {
       animate={{ opacity: internalProgress === 100 ? 0 : 1 }}
       transition={{ duration: 0.8, ease: "easeInOut" }}
     >
+      {/* Star background with consistent animation */}
       <div className="absolute inset-0 overflow-hidden">
-        {Array.from({ length: 100 }).map((_, i) => (
-          <div
-            key={i}
-            className="absolute rounded-full bg-white"
-            style={{
-              width: `${Math.random() * 3}px`,
-              height: `${Math.random() * 3}px`,
-              top: `${Math.random() * 100}%`,
-              left: `${Math.random() * 100}%`,
-              opacity: Math.random() * 0.8 + 0.2,
-              animation: `twinkle ${Math.random() * 5 + 3}s infinite ${
-                Math.random() * 5
-              }s`,
-            }}
-          />
-        ))}
+        {renderStars()}
       </div>
 
+      {/* Rest of your preloader content remains the same */}
       <motion.div
         className="relative w-32 h-32 mb-8"
         animate={{ rotate: 360 }}
         transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
       >
+        {/* Existing orbit animation */}
         <div className="absolute inset-0 rounded-full bg-gradient-to-br from-indigo-900 via-purple-800 to-[#f8a71b] shadow-lg shadow-purple-500/30">
           <div className="absolute inset-2 rounded-full bg-gradient-to-br from-indigo-700 via-purple-600 to-[#ca891a] opacity-80"></div>
 
@@ -79,7 +92,7 @@ const Preloader = ({ onLoadingComplete, loadingProgress = 0 }) => {
       </motion.div>
 
       <h1 className="text-4xl-center md:text-5xl font-bold tracking-widest font-['Old English Text MT'] text-[#ca891a] mb-8">
-        ✨HOLD TIGHT AS THE DATA UNFOLDS!✨
+        HOLD TIGHT AS THE DATA UNFOLDS!
       </h1>
 
       <div className="w-64 h-2 bg-gray-800 rounded-full overflow-hidden mb-4">
