@@ -1,32 +1,36 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
-const Preloader = ({ onLoadingComplete }) => {
-  const [progress, setProgress] = useState(0);
-
+const Preloader = ({ onLoadingComplete, loadingProgress = 0 }) => {
+  // Remove the artificial progress calculation and use the passed progress
+  const [internalProgress, setInternalProgress] = useState(0);
+  
   useEffect(() => {
-    const interval = setInterval(() => {
-      setProgress((prevProgress) => {
-        const newProgress = prevProgress + Math.random() * 10;
-        if (newProgress >= 100) {
-          clearInterval(interval);
+    // Ensure smooth progress transitions by gradually updating internal state
+    const updateProgress = () => {
+      setInternalProgress(prev => {
+        // Move toward the target progress, but don't go backwards
+        const nextProgress = Math.max(prev, Math.min(prev + 2, loadingProgress));
+        
+        // When we reach 100%, notify completion after a small delay
+        if (nextProgress >= 100 && prev < 100) {
           setTimeout(() => {
             onLoadingComplete();
-          }, 500);
-          return 100;
+          }, 800);
         }
-        return newProgress;
+        return nextProgress;
       });
-    }, 200);
-
-    return () => clearInterval(interval);
-  }, [onLoadingComplete]);
+    };
+    
+    const timer = setInterval(updateProgress, 50);
+    return () => clearInterval(timer);
+  }, [loadingProgress, onLoadingComplete]);
 
   return (
     <motion.div
-      className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-black h-full"
+      className="fixed inset-0 z-[1000] flex flex-col items-center justify-center bg-black h-full"
       initial={{ opacity: 1 }}
-      animate={{ opacity: progress === 100 ? 0 : 1 }}
+      animate={{ opacity: internalProgress === 100 ? 0 : 1 }}
       transition={{ duration: 0.8, ease: "easeInOut" }}
     >
       <div className="absolute inset-0 overflow-hidden">
@@ -82,12 +86,12 @@ const Preloader = ({ onLoadingComplete }) => {
         <motion.div
           className="h-full bg-gradient-to-r from-purple-600 via-[#f8a71b] to-purple-600"
           initial={{ width: 0 }}
-          animate={{ width: `${progress}%` }}
+          animate={{ width: `${internalProgress}%` }}
           transition={{ duration: 0.3 }}
         ></motion.div>
       </div>
 
-      <p className="text-[#f8a71b] text-sm">{Math.floor(progress)}%</p>
+      <p className="text-[#f8a71b] text-sm">{Math.floor(internalProgress)}%</p>
 
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {["σ", "μ", "∑", "π", "∫", "∞", "≈", "∝", "∂", "√"].map((symbol, i) => (

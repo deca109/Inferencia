@@ -43,8 +43,9 @@ function Home() {
   const videoRef = useRef(null);
   const [scrollY, setScrollY] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
-  // Change initial state to false so preloader shows until loading completes
   const [assetsLoaded, setAssetsLoaded] = useState(false);
+  // Add state to track loading percentage
+  const [loadingProgress, setLoadingProgress] = useState(0);
 
   // Track scroll position for parallax effects
   useEffect(() => {
@@ -79,10 +80,14 @@ function Home() {
       const percentageLoaded = Math.round((totalLoaded / totalAssets) * 100);
       
       console.log(`Assets loaded: ${percentageLoaded}% (${totalLoaded}/${totalAssets})`);
+      setLoadingProgress(percentageLoaded);
       
       if (loadedImages === imageAssets.length && loadedVideos === videoAssets.length) {
         console.log('All assets loaded successfully');
-        setAssetsLoaded(true);
+        // Only set assetsLoaded to true after a delay to ensure smooth transition
+        setTimeout(() => {
+          setAssetsLoaded(true);
+        }, 200);
       }
     };
 
@@ -127,25 +132,38 @@ function Home() {
       video.load();
     });
 
-    // Safety timeout - only activate if assets haven't loaded in 10 seconds
+    // Safety timeout - only activate if assets haven't loaded in 15 seconds (increased time)
     const timeout = setTimeout(() => {
       if (!assetsLoaded) {
         console.warn('Loading timeout reached - forcing completion');
+        setLoadingProgress(100);
         setAssetsLoaded(true);
       }
-    }, 10000);
+    }, 15000); // Increased to 15 seconds to give more time
 
     return () => clearTimeout(timeout);
   }, []);
 
   useEffect(() => {
-    if (!isLoading) {
+    if (!isLoading && assetsLoaded) {
       const video = videoRef.current;
       if (video) {
         document.getElementById("topnav").style.zIndex = 20;
-        video.play().catch((error) => {
-          console.log("Video autoplay failed:", error);
-        });
+        // Make sure the video is ready before playing
+        if (video.readyState >= 3) {
+          video.play().catch((error) => {
+            console.log("Video autoplay failed:", error);
+          });
+        } else {
+          // If not ready, wait for it
+          const handleCanPlay = () => {
+            video.play().catch((error) => {
+              console.log("Video autoplay failed:", error);
+            });
+            video.removeEventListener('canplaythrough', handleCanPlay);
+          };
+          video.addEventListener('canplaythrough', handleCanPlay);
+        }
 
         video.onended = () => {
           video.pause();
@@ -155,7 +173,7 @@ function Home() {
         };
       }
     }
-  }, [isLoading]);
+  }, [isLoading, assetsLoaded]);
 
   // Add global styles for the preloader animations
   useEffect(() => {
@@ -176,12 +194,20 @@ function Home() {
     };
   }, []);
 
+  // Handle loading completion - don't hide preloader until assets are really loaded
   const handleLoadingComplete = () => {
-    setIsLoading(false);
+    // Only complete loading if assets are actually loaded
+    if (assetsLoaded) {
+      setIsLoading(false);
+    }
   };
 
+  // Show preloader while assets are loading, pass the actual loading progress
   if (isLoading || !assetsLoaded) {
-    return <Preloader onLoadingComplete={handleLoadingComplete} />;
+    return <Preloader 
+      onLoadingComplete={handleLoadingComplete} 
+      loadingProgress={loadingProgress}
+    />;
   }
 
   return (
