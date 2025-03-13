@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@keyframes flowing-numbers {
+  0% { transform: translateY(0); opacity: 0.5; }
+  100% { transform: translateY(-100%); opacity: 0; }
+}
+
+.animate-flowing-numbers span {
+  animation: flowing-numbers 8s infinite linear alternate;
+}
+
+/* Custom Scrollbar Styles */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(202, 137, 26, 0.6);
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(202, 137, 26, 0.8);
+}
+
+/* For Firefox */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(202, 137, 26, 0.6) rgba(0, 0, 0, 0.2);
+}
+
