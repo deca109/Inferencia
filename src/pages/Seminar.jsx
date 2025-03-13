@@ -118,20 +118,15 @@ function Seminar() {
               {/* Memorial info */}
               <div className="mb-12 max-w-3xl mx-auto">
                 <p className="text-xl text-center leading-relaxed bg-black/30 p-6 rounded-lg">
-                  <span className="text-[#ffcc00] font-bold">
-                    Prof. Ranjit Kandar
-                  </span>{" "}
-                  was a pioneer in
-                  <span className="text-[#ffcc00] font-bold">
-                    {" "}
-                    statistical inference and experimental design
-                  </span>
-                  . His groundbreaking work in
-                  <span className="text-[#ffcc00] font-bold">
-                    {" "}
-                    regression analysis and sampling techniques
-                  </span>
-                  continues to shape the field.
+                  Prof. Ranjit Kandar, a statistical genius, joined Kalyani
+                  University in 1982. His works showcased his brilliance, but it
+                  was his teaching that made him legendary. With unmatched
+                  clarity and kindness, he turned complex theories into simple
+                  truths, earning the love and respect of his students. His
+                  legacy endures in the hearts of his dear students. “He didn't
+                  just teach statistics,” a student once said, “he taught us how
+                  to think.” Prof.Kandar's light burned briefly but left an
+                  eternal glow.
                 </p>
 
                 <div className="text-center my-8">
@@ -167,18 +162,21 @@ function Seminar() {
                     </h4>
                   </div>
                   <p className="text-lg leading-relaxed text-center lg:text-left">
-                    Professor Arindam Sengupta is a distinguished academic in Probability Theory, 
-                    currently serving as a Professor in the Department of Statistics at the University of Calcutta. 
-                    He earned his B.Stat, M.Stat, and Ph.D. from the Indian Statistical Institute, Kolkata. His 
-                    research interests include Probability Theory, Asymptotic Inference, and Stochastic Processes. 
-                    He has published extensively in reputed journals and has contributed to academic conferences. 
-                    He has guided M.Phil and Ph.D. students and has been recognized with the NBHM Research Award. 
-                    He is also actively involved in refereeing and reviewing for prestigious statistical journals.
+                    Professor Arindam Sengupta is a distinguished academic in
+                    Probability Theory, currently serving as a Professor in the
+                    Department of Statistics at the University of Calcutta. He
+                    earned his B.Stat, M.Stat, and Ph.D. from the Indian
+                    Statistical Institute, Kolkata. His research interests
+                    include Probability Theory, Asymptotic Inference, and
+                    Stochastic Processes. He has published extensively in
+                    reputed journals and has contributed to academic
+                    conferences. He has guided M.Phil and Ph.D. students and has
+                    been recognized with the NBHM Research Award. He is also
+                    actively involved in refereeing and reviewing for
+                    prestigious statistical journals.
                   </p>
                 </div>
               </div>
-
-              
             </div>
           </motion.div>
 
@@ -212,15 +210,17 @@ function Seminar() {
               {/* Memorial info */}
               <div className="mb-12 max-w-3xl mx-auto">
                 <p className="text-xl text-center leading-relaxed bg-black/30 p-6 rounded-lg">
-                  Professor Uttam Bandyopadhyay was a revered statistician and educator, 
-                  known for his dedication to teaching and research. He served at the 
-                  University of Calcutta and RKMRC , earning immense respect from students 
-                  and colleagues. His expertise spanned statistical inference and clinical trials, 
-                  shaping the field and mentoring numerous scholars. A humble and compassionate 
-                  individual, he was always supportive of students and faculty, leaving a lasting 
-                  impact on the academic community. His tenure as Dean of Science further showcased 
-                  his leadership. With his passing, the world of statistics has lost an exceptional 
-                  teacher and researcher, but his legacy endures.
+                  Professor Uttam Bandyopadhyay was a revered statistician and
+                  educator, known for his dedication to teaching and research.
+                  He served at the University of Calcutta and RKMRC , earning
+                  immense respect from students and colleagues. His expertise
+                  spanned statistical inference and clinical trials, shaping the
+                  field and mentoring numerous scholars. A humble and
+                  compassionate individual, he was always supportive of students
+                  and faculty, leaving a lasting impact on the academic
+                  community. His tenure as Dean of Science further showcased his
+                  leadership. With his passing, the world of statistics has lost
+                  an exceptional teacher and researcher, but his legacy endures.
                 </p>
 
                 <div className="text-center my-8">
@@ -267,7 +267,6 @@ function Seminar() {
                   </p>
                 </div>
               </div>
-              
             </div>
           </motion.div>
         </div>
