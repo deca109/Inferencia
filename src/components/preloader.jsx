@@ -142,15 +142,16 @@ const Preloader = ({ onLoadingComplete, loadingProgress = 0 }) => {
             }}
             initial={{ scale: 0, opacity: 0 }}
             animate={{
-              scale: [0, 15],
-              opacity: [0, 1, 0],
-              x: [0, Math.random() * 200 - 100],
-              y: [0, Math.random() * 200 - 100],
+              scale: [0, 3, 0],        // Smaller maximum size
+              opacity: [0, 0.7, 0],    // Less intense
+              x: [0, Math.random() * 100 - 50],  // More subtle movement
+              y: [0, Math.random() * 100 - 50],
             }}
             transition={{
-              duration: 0.8,
+              duration: 2,             // Longer duration for smoother effect
               repeat: Infinity,
-              repeatDelay: Math.random() * 10 + 5,
+              repeatDelay: Math.random() * 5 + 3,  // More frequent but still random
+              ease: "easeInOut"        // Smoother transition
             }}
           />
         ))}
