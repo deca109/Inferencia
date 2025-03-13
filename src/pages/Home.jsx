@@ -101,25 +101,29 @@ function Home() {
       img.src = src;
     });
 
-    // Preload videos with proper event handling
+    // Enhanced video preloading logic
     videoAssets.forEach((src) => {
       const video = document.createElement('video');
-      video.muted = true; // Needed for autoplay in some browsers
-      
-      video.onloadeddata = () => {
-        loadedVideos++;
-        checkAllLoaded();
-      };
-      
-      video.onerror = () => {
-        console.error(`Failed to load video: ${src}`);
-        loadedVideos++;
-        checkAllLoaded();
-      };
-      
-      video.src = src;
+      video.muted = true;
       video.preload = "auto";
-      // Force load attempt
+      
+      // Listen for both metadata and canplay events
+      video.addEventListener('canplaythrough', function onCanPlay() {
+        console.log(`Video can play through without buffering: ${src}`);
+        video.removeEventListener('canplaythrough', onCanPlay);
+        loadedVideos++;
+        checkAllLoaded();
+      });
+      
+      video.addEventListener('error', function onError() {
+        console.error(`Failed to load video: ${src}`);
+        video.removeEventListener('error', onError);
+        loadedVideos++;
+        checkAllLoaded();
+      });
+      
+      // Start loading the video
+      video.src = src;
       video.load();
     });
 
