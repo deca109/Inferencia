@@ -81,6 +81,45 @@ function Registration() {
             title="Registration Form"
           />
         </motion.div>
+
+        {/* General Rules Section */}
+        <motion.div
+          className="max-w-4xl mx-auto mt-20"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
+        >
+          <div className="relative">
+            <div className="absolute inset-0 bg-[#ca891a]/10 blur-2xl rounded-3xl"></div>
+            <div className="relative backdrop-blur-sm bg-black/40 border border-[#ca891a]/30 rounded-2xl p-8 sm:p-10">
+              <h2 className="font-impact text-4xl text-center text-transparent bg-clip-text bg-gradient-to-r from-[#f8a71b] to-[#ca891a] mb-10">
+                GENERAL RULES AND GUIDELINES
+              </h2>
+
+              <ul className="space-y-6 max-w-4xl mx-auto">
+                {[
+                  "If you have found your teammates for Stochast-O-Liga, only one of you needs to fill out this form.",
+                  "Cross-college teams are allowed.",
+                  "Please enter your email address correctly.",
+                  <>You will receive a confirmation email from us within 24 hours of registration. If you do not receive it, please <Link to="/contact" className="text-[#ffab19] hover:underline hover:text-[#f8a71b] transition-colors">contact us</Link>.</>,
+                ].map((rule, index) => (
+                  <motion.li
+                    key={index}
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.3, delay: 0.7 + index * 0.1 }}
+                    className="flex items-start gap-4 font-['DIN_Condensed'] text-xl"
+                  >
+                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-r from-[#f8a71b] to-[#ca891a] flex items-center justify-center text-black font-bold mt-1">
+                      {index + 1}
+                    </div>
+                    <p className="text-gray-200">{typeof rule === 'string' ? rule : <>{rule}</>}</p>
+                  </motion.li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </motion.div>
       </div>
 
       {/* Footer Video */}
