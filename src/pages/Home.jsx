@@ -599,7 +599,7 @@ function Home() {
                   transition={{ delay: 0.2, duration: 0.8 }}
                 >
                   <p className="text-base sm:text-lg mb-4 opacity-90 leading-relaxed px-2 sm:px-4 text-left text-white">
-                  The grand finale of Inferencia is Stochast-o-Liga, a a high-stakes statistical gameplay, a quiz nothing less than a battle of statistical prowess, that encourages team spirit and challenge you to the very core.
+                  The grand finale of Inferencia is Stochast-o-Liga, a high-stakes statistical gameplay, a quiz nothing less than a battle of statistical prowess, that encourages team spirit and challenge you to the very core.
                   </p>
                   <p className="text-base sm:text-lg mb-4 opacity-90 leading-relaxed px-2 sm:px-4 text-left text-white">
                   Combining statistical aptitude, logical reasoning and scientific knowledge, this team event evaluates the critical thinking abilities of competing students while simultaneously enlightening the audience. Prior to the main event, all teams must participate in a preliminary round, which comprises mathematical and statistical challenges. The top-performing teams advance to the main event and subsequent rounds encompass a diverse range of questions, including those on personalities, theoretical concepts, statistical terminology and general scientific knowledge.
