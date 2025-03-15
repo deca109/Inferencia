@@ -48,7 +48,7 @@ function FAQ() {
       question:
         "What if I don't have teammates but want to participate in Stochast-O-Liga?",
       answer:
-        'No worries. Such participants must fill under "Seminar Only" and reach us out at the WhatsApp Numbers provided. We would notify all such people, and they can form their teams accordingly.',
+        'No worries. Such participants must fill under "Seminar Only" and reach us out at the WhatsApp Numbers provided. We would notify all such people and they can form their teams accordingly.',
     },
     {
       question: "When and How to reach?",

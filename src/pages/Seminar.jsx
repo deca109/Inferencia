@@ -80,12 +80,7 @@ function Seminar() {
       >
         <div className="max-w-4xl mx-auto">
           <p className="text-lg sm:text-xl md:text-2xl font-light tracking-wide mb-6 text-center">
-            Every year, the team behind Inferencia works its hardest to make it
-            an opportunity for learning and connecting with students and
-            teachers across town. Hence, Inferencia starts off with a memorial
-            lecture, hosting stalwarts in the field of statistics, researchers
-            and teachers who have dedicated their lives to learning and pushing
-            the boundaries of the subject.
+          The Inferencia team endeavors to transform the event into an enriching platform for learning and fostering connections between students and educators throughout the community. To commence this venture, Inferencia initiates with a memorial lecture delivered by esteemed figures in the field of statistics, researchers and educators who have dedicated their lives to push the boundaries of the subject.
           </p>
           <p className="text-lg sm:text-xl md:text-2xl font-light tracking-wide text-center text-[#ffab19]">
             This year we will be having two State-Level Seminars.
@@ -172,14 +167,14 @@ function Seminar() {
                   </div>
                   <p className="text-lg leading-relaxed text-center lg:text-left">
                     Professor Alok Goswami is a renowned statistician
-                    specializing in probability theory and stochastic processes.
+                    specializing in Probability Theory and Stochastic Processes.
                     He served at the Indian Statistical Institute, Kolkata, for
                     over two decades, contributing significantly to research and
                     education. Even after retirement in 2019, he continues as a
                     Visiting Professor at IACS, Kolkata. He co-authored "Measure
                     Theory for Analysis and Probability," a valuable academic
                     resource. His work has profoundly influenced students and
-                    researchers in the field of mathematical statistics.
+                    researchers in the field of Mathematical Statistics.
                   </p>
                 </div>
               </div>
@@ -254,14 +249,14 @@ function Seminar() {
                     Professor Arindam Sengupta is a distinguished academic in
                     Probability Theory, currently serving as a Professor in the
                     Department of Statistics at the University of Calcutta. He
-                    earned his B.Stat, M.Stat, and Ph.D. from the Indian
+                    earned his B.Stat, M.Stat and Ph.D. from the Indian
                     Statistical Institute, Kolkata. His research interests
-                    include Probability Theory, Asymptotic Inference, and
+                    include Probability Theory, Asymptotic Inference and
                     Stochastic Processes. He has published extensively in
                     reputed journals and has contributed to academic
                     conferences. He has guided M.Phil and Ph.D. students and has
-                    been recognized with the NBHM Research Award. He is also
-                    actively involved in refereeing and reviewing for
+                    been recognized with the NBHM Research Award. He
+                    actively engages in refereeing and reviewing for
                     prestigious statistical journals.
                   </p>
                 </div>

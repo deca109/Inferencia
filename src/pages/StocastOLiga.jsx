@@ -68,7 +68,7 @@ function StocastOLiga() {
       name: "Blitz",
       tagline: "Feel the heat as time keeps ticking",
       description:
-        "In this round, each team will be given 1 minute to answer 20 rapid fire questions, on statistical trivia. Every correct answer will be awarded and every wrong answer will be penalized. The questions will not be shown on the screen, and only read out by the Quizmaster. The teams may choose to pass the question, which causes no negative marking.",
+        "In this round, each team will be given 1 minute to answer 20 rapid fire questions, on statistical trivia. Every correct answer will be awarded and every wrong answer will be penalized. The questions will not be shown on the screen and only read out by the Quizmaster. The teams may choose to pass the question, which causes no negative marking.",
       image: blitz,
       color: "from-red-600/90 to-rose-900/90",
     },
@@ -152,17 +152,11 @@ function StocastOLiga() {
               problem-solving competition.
             </p>
             <p className="font-['DIN_Condensed'] text-xl sm:text-2xl leading-relaxed text-gray-300">
-              Blending statistical aptitude, logical reasoning and knowledge of
-              scientific trivia, it is a team event which tests the critical
-              thinking skills of competing students and in the process,
-              enlightens the audience as well. However, all the teams have to
-              sit for a preliminary round, consisting of mathematical and
-              statistical problems, and the top scorers proceed for the main
-              event.
+            Combining statistical aptitude, logical reasoning and scientific knowledge, this team event evaluates the critical thinking abilities of competing students while simultaneously enlightening the audience. Prior to the main event, all teams must participate in a preliminary round, which comprises mathematical and statistical challenges. The top-performing teams advance to the main event and subsequent rounds encompass a diverse range of questions, including those on personalities, theoretical concepts, statistical terminology and general scientific knowledge.
             </p>
             <p className="font-['DIN_Condensed'] text-xl sm:text-2xl leading-relaxed text-gray-300">
               Participants engage in friendly yet competitive rounds, with
-              opportunities to network, learn, and refine their analytical
+              opportunities to network, learn and refine their analytical
               abilities. To deepen one's statistical knowledge, or simply to
               enjoy a challenge, this event has always been a rewarding
               experience for students across a wide array of disciplines.
@@ -284,9 +278,9 @@ function StocastOLiga() {
 
               <ul className="space-y-6 max-w-4xl mx-auto">
                 {[
-                  "If sufficient registrations are received, a Prelims will be held from which 10 teams would proceed to the main quiz. The Prelims would test your skills in Maths and Statistics.",
-                  "There would be an elimination after Round 3 from which the top 6 teams would proceed to the final two rounds.",
-                  "Each team would consist of 3 members. Inter-College pairing is allowed.",
+                  "If sufficient registrations are received, a Prelims will be held from which 10 teams will proceed to the main quiz. The Prelims will test your skills in Maths and Statistics.",
+                  "There will be an elimination after Round 3 from which the top 6 teams will proceed to the final two rounds.",
+                  "Each team will consist of 3 members. Inter-College pairing is allowed.",
                   "One participant can register for the entire team. The other two don't have to register separately.",
                   "Any use of electronics is prohibited during the course of the event.",
                   "The decision of Quizmaster is final and binding.",

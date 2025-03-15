@@ -46,10 +46,10 @@ function Registration() {
           />
 
           <p className="text-lg sm:text-2xl font-['DIN_Condensed'] tracking-wide mb-8 max-w-5xl mx-auto leading-relaxed px-4 sm:px-8 text-gray-300">
-            Get ready to dive into a world of excitement, creativity, and
+            Get ready to dive into a world of excitement, creativity and
             unforgettable moments! By registering, you're not just joining an
             event—you're becoming part of our vibrant INFERENCIA family. Let's
-            create magic, make memories, and celebrate together.
+            create magic, make memories and celebrate together.
             <span className="block mt-2 text-[#ffab19] font-bold">
               Don't wait—your adventure starts here!
             </span>
@@ -101,7 +101,7 @@ function Registration() {
                   "If you have found your teammates for Stochast-O-Liga, only one of you needs to fill out this form.",
                   "Cross-college teams are allowed.",
                   "Please enter your email address correctly.",
-                  <>You will receive a confirmation email from us within 24 hours of registration. If you do not receive it, please <Link to="/contact" className="text-[#ffab19] hover:underline hover:text-[#f8a71b] transition-colors">contact us</Link>.</>,
+                  <>You will receive a confirmation email from us within 24 hours of registration. If not received, please <Link to="/contact" className="text-[#ffab19] hover:underline hover:text-[#f8a71b] transition-colors">contact us</Link>.</>,
                 ].map((rule, index) => (
                   <motion.li
                     key={index}

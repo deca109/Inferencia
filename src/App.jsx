@@ -46,7 +46,7 @@ function App() {
             {/* Centered Text */}
             <div className="text-center font-semibold text-lg md:text-xl">
               <Link to="/" className="hover:text-[#f8a71b] transition">
-                RKMRC Dept. Of Statistics
+                Dept. of Statistics, RKMRC
               </Link>
             </div>
 

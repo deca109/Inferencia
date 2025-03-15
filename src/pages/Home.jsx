@@ -267,7 +267,7 @@ function Home() {
           <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-500"></div>
 
           <h2 className="text-4xl md:text-6xl font-bold tracking-widest text-white group-hover:text-white group-hover:scale-105 transform transition-all duration-500">
-            April 08th, 2025
+            April 08, 2025
           </h2>
         </motion.div>
       </motion.section>
@@ -416,7 +416,7 @@ function Home() {
                     the Dept. of Statistics emerged as an Honours Department a
                     couple of years later. Sri Bikash Chandra Sanyal, Sri
                     Gourikanta Bhattacharya, Sri Sukharanjan Chakraborty, Sri
-                    Prasanta Kumar Giri, and Sri Nanda Kishore De laid the
+                    Prasanta Kumar Giri and Sri Nanda Kishore De laid the
                     foundation of the Department in{" "}
                     <span className="text-[#ffd700] font-medium">1962</span>.
                     Through their unwavering commitment to excellence and
@@ -487,7 +487,7 @@ function Home() {
                       image={pkImage}
                       name="Dr. Prasanta Kumar Giri"
                       title="The Pioneer"
-                      description="Professor Giri didn't just teach statistics—he built its foundation, brick by brick, book by book. His textbooks are the rite of passage for every aspiring statistician, and retirement? Just an outlier in his dataset. Polite yet powerful, he turns complex theories into simple truths. In our department's grand equation, he's the undisputed constant!"
+                      description="Professor Giri didn't just teach statistics—he built its foundation, brick by brick, book by book. His textbooks are the rite of passage for every aspiring statistician and retirement? Just an outlier in his dataset. Polite yet powerful, he turns complex theories into simple truths. In our department's grand equation, he's the undisputed constant!"
                     />
                   </motion.div>
                   <motion.div variants={fadeIn} className="flex justify-center">
@@ -529,7 +529,7 @@ function Home() {
                       image={pcImage}
                       name="Dr. Parthasarathi Chakrabarti (HOD)"
                       title="The Luminary"
-                      description="He is the King of Probability, the grandmaster of randomness, and the ruler of distributions. When he teaches, even confusion takes notes. His lectures are not just lessons; they are intellectual adventures, where every student walks in with doubt and walks out with enlightenment. He doesn't just explain—he illuminates, making even the most stubborn concepts surrender to his brilliance."
+                      description="He is the King of Probability, the grandmaster of randomness and the ruler of distributions. When he teaches, even confusion takes notes. His lectures are not just lessons; they are intellectual adventures, where every student walks in with doubt and walks out with enlightenment. He doesn't just explain—he illuminates, making even the most stubborn concepts surrender to his brilliance."
                     />
                   </motion.div>
                   <motion.div variants={fadeIn} className="flex justify-center">
@@ -537,7 +537,7 @@ function Home() {
                       image={sbImage}
                       name="Sri Subhadeep Banerjee"
                       title="The Storyteller"
-                      description="Professor Banerjee believes every theorem has a tale to tell. He won't rest until every student is hooked, convinced, and nodding along—resistance is futile! With anecdotes sharper than a chi-square test, he turns dry formulas into gripping sagas. For him, numbers may lie, but a good story never does!"
+                      description="Professor Banerjee believes every theorem has a tale to tell. He won't rest until every student is hooked, convinced and nodding along—resistance is futile! With anecdotes sharper than a chi-square test, he turns dry formulas into gripping sagas. For him, numbers may lie, but a good story never does!"
                     />
                   </motion.div>
                   <motion.div variants={fadeIn} className="flex justify-center">
@@ -545,7 +545,7 @@ function Home() {
                       image={tmImage}
                       name="Sri Tulsidas Mukhopadhyay"
                       title="The Magician"
-                      description="Professor Mukhopadhyay steps into the classroom, and suddenly, statistics isn't numbers—it's pure magic. Summing up tricky problems? Child's play. Every tough equation melts like toffee in his hands, leaving students spellbound. With a flick of his chalk, even the hardest theorems surrender—because in his class, math doesn't just add up, it dazzles!"
+                      description="Professor Mukhopadhyay steps into the classroom and suddenly, statistics isn't numbers—it's pure magic. Summing up tricky problems? Child's play. Every tough equation melts like toffee in his hands, leaving students spellbound. With a flick of his chalk, even the hardest theorems surrender—because in his class, math doesn't just add up, it dazzles!"
                     />
                   </motion.div>
                 </motion.div>
@@ -570,7 +570,7 @@ function Home() {
                       image={schImage}
                       name="Dr. Suryasish Chatterjee"
                       title="The Torchbearer"
-                      description="Professor Chatterjee may be the department's newest recruit, but he's already as integral as the central limit theorem. He carries inference in his bones and patience in his soul, tackling doubts with the elegance of a well-posed function. His students suspect he's secretly asymptotic—always approaching perfection but never running out of time to listen. In his classroom, logic flows smoother than a Cauchy sequence, and curiosity always finds a confident interval to thrive."
+                      description="Professor Chatterjee may be the department's newest recruit, but he's already as integral as the central limit theorem. He carries inference in his bones and patience in his soul, tackling doubts with the elegance of a well-posed function. His students suspect he's secretly asymptotic—always approaching perfection but never running out of time to listen. In his classroom, logic flows smoother than a Cauchy sequence and curiosity always finds a confident interval to thrive."
                     />
                   </motion.div>
                 </motion.div>
@@ -599,25 +599,14 @@ function Home() {
                   transition={{ delay: 0.2, duration: 0.8 }}
                 >
                   <p className="text-base sm:text-lg mb-4 opacity-90 leading-relaxed px-2 sm:px-4 text-left text-white">
-                    The second part of Inferencia is Stochast-O-Liga, a
-                    statistical problem-solving competition.
+                  The grand finale of Inferencia is Stochast-o-Liga, a a high-stakes statistical gameplay, a quiz nothing less than a battle of statistical prowess, that encourages team spirit and challenge you to the very core.
                   </p>
                   <p className="text-base sm:text-lg mb-4 opacity-90 leading-relaxed px-2 sm:px-4 text-left text-white">
-                    Blending statistical aptitude, logical reasoning and
-                    knowledge of scientific trivia, it is a team event which
-                    tests the critical thinking skills of competing students and
-                    in the process, enlightens the audience as well. However,
-                    all the teams have to sit for a preliminary round,
-                    consisting of mathematical and statistical problems, and the
-                    top scorers proceed for the main event. The subsequent
-                    rounds not only feature questions on personalities,
-                    theorems, statistical terms and general scientific
-                    knowledge, but also coding contests requiring quick thinking
-                    as well as technical skills.
+                  Combining statistical aptitude, logical reasoning and scientific knowledge, this team event evaluates the critical thinking abilities of competing students while simultaneously enlightening the audience. Prior to the main event, all teams must participate in a preliminary round, which comprises mathematical and statistical challenges. The top-performing teams advance to the main event and subsequent rounds encompass a diverse range of questions, including those on personalities, theoretical concepts, statistical terminology and general scientific knowledge.
                   </p>
                   <p className="text-base sm:text-lg mb-4 opacity-90 leading-relaxed px-2 sm:px-4 text-left text-white">
                     Participants engage in friendly yet competitive rounds, with
-                    opportunities to network, learn, and refine their analytical
+                    opportunities to network, learn and refine their analytical
                     abilities. To deepen one's statistical knowledge, or simply
                     to enjoy a challenge, this event has always been a rewarding
                     experience for students across a wide array of disciplines.
