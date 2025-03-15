@@ -285,7 +285,7 @@ function StocastOLiga() {
               <ul className="space-y-6 max-w-4xl mx-auto">
                 {[
                   "If sufficient registrations are received, a Prelims will be held from which 10 teams would proceed to the main quiz. The Prelims would test your skills in Maths and Statistics.",
-                  "There would an elimination after Round 3 from which the top 6 teams would proceed to the final two rounds.",
+                  "There would be an elimination after Round 3 from which the top 6 teams would proceed to the final two rounds.",
                   "Each team would consist of 3 members. Inter-College pairing is allowed.",
                   "One participant can register for the entire team. The other two don't have to register separately.",
                   "Any use of electronics is prohibited during the course of the event.",

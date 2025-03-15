@@ -88,98 +88,14 @@ function Seminar() {
             the boundaries of the subject.
           </p>
           <p className="text-lg sm:text-xl md:text-2xl font-light tracking-wide text-center text-[#ffab19]">
-            This year we would be having two State-Level Seminars.
+            This year we will be having two State-Level Seminars.
           </p>
         </div>
       </motion.section>
 
       {/* Memorial Talks Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto space-y-20">
-          {/* Ranjit Kandar Khanda Memorial Talk */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.7 }}
-            className="relative rounded-2xl overflow-hidden"
-          >
-            <div className="absolute inset-0 bg-gradient-to-br from-[#ffab19]/20 to-gray-900/95 backdrop-blur-sm z-0"></div>
-
-            <div className="relative z-10 p-6 sm:p-8 md:p-12">
-              {/* Section header */}
-              <div className="text-center mb-12">
-                <h2 className="inline-block px-6 py-3 text-3xl sm:text-4xl font-bold tracking-wide text-white bg-gradient-to-r from-[#ffab19]/90 to-[#ca891a]/90 rounded-lg shadow-lg mb-4">
-                  Ranjit Kandar Memorial Talk
-                </h2>
-                <div className="h-1 w-32 bg-white/30 mx-auto my-4"></div>
-              </div>
-
-              {/* Memorial info */}
-              <div className="mb-12 max-w-3xl mx-auto">
-                <p className="text-xl text-center leading-relaxed bg-black/30 p-6 rounded-lg">
-                  Prof. Ranjit Kandar, a statistical genius, joined Kalyani
-                  University in 1982. His works showcased his brilliance, but it
-                  was his teaching that made him legendary. With unmatched
-                  clarity and kindness, he turned complex theories into simple
-                  truths, earning the love and respect of his students. His
-                  legacy endures in the hearts of his dear students. “He didn't
-                  just teach statistics,” a student once said, “he taught us how
-                  to think.” Prof.Kandar's light burned briefly but left an
-                  eternal glow.
-                </p>
-
-                <div className="text-center my-8">
-                  <h3 className="inline-block text-2xl sm:text-3xl font-bold text-white py-2 px-6 border-b-2 border-[#ffab19]">
-                    "A Chat On Coin Tossing"
-                  </h3>
-                </div>
-              </div>
-
-              {/* Speaker info */}
-              <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-12 bg-black/40 p-6 rounded-xl">
-                <div className="lg:w-1/3 flex flex-col items-center">
-                  <div className="relative">
-                    <div className="absolute inset-0 rounded-full border-2 border-[#ffab19] animate-ping opacity-20"></div>
-                    <img
-                      src={arindamSengupta}
-                      alt="Arindam Sengupta"
-                      className="w-56 h-56 rounded-full object-cover shadow-lg border-4 border-[#ffab19]/50"
-                    />
-                  </div>
-                  <h3 className="text-xl sm:text-2xl font-bold text-[#ffcc00] mt-4 text-center">
-                    Dr. Arindam Sengupta
-                  </h3>
-                  <p className="text-center text-gray-300 mt-1 font-light">
-                    University of Calcutta
-                  </p>
-                </div>
-
-                <div className="lg:w-2/3">
-                  <div className="border-l-4 border-[#ffab19] pl-4 mb-4 hidden lg:block">
-                    <h4 className="text-xl font-bold text-white">
-                      About the Speaker
-                    </h4>
-                  </div>
-                  <p className="text-lg leading-relaxed text-center lg:text-left">
-                    Professor Arindam Sengupta is a distinguished academic in
-                    Probability Theory, currently serving as a Professor in the
-                    Department of Statistics at the University of Calcutta. He
-                    earned his B.Stat, M.Stat, and Ph.D. from the Indian
-                    Statistical Institute, Kolkata. His research interests
-                    include Probability Theory, Asymptotic Inference, and
-                    Stochastic Processes. He has published extensively in
-                    reputed journals and has contributed to academic
-                    conferences. He has guided M.Phil and Ph.D. students and has
-                    been recognized with the NBHM Research Award. He is also
-                    actively involved in refereeing and reviewing for
-                    prestigious statistical journals.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-
+        <div className="max-w-6xl mx-auto space-y-20">   
           {/* Uttam Bandyopadhyay Memorial Talk */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -225,7 +141,7 @@ function Seminar() {
 
                 <div className="text-center my-8">
                   <h3 className="inline-block text-2xl sm:text-3xl font-bold text-white py-2 px-6 border-b-2 border-[#ffab19]">
-                    "Sample Size 1 To ∞ : A Mathematical Peculiarity"
+                    "A Chat on Coin Tossing"
                   </h3>
                 </div>
               </div>
@@ -264,6 +180,89 @@ function Seminar() {
                     Theory for Analysis and Probability," a valuable academic
                     resource. His work has profoundly influenced students and
                     researchers in the field of mathematical statistics.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+          {/* Ranjit Kandar Khanda Memorial Talk */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.7 }}
+            className="relative rounded-2xl overflow-hidden"
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-[#ffab19]/20 to-gray-900/95 backdrop-blur-sm z-0"></div>
+
+            <div className="relative z-10 p-6 sm:p-8 md:p-12">
+              {/* Section header */}
+              <div className="text-center mb-12">
+                <h2 className="inline-block px-6 py-3 text-3xl sm:text-4xl font-bold tracking-wide text-white bg-gradient-to-r from-[#ffab19]/90 to-[#ca891a]/90 rounded-lg shadow-lg mb-4">
+                  Ranjit Kandar Memorial Talk
+                </h2>
+                <div className="h-1 w-32 bg-white/30 mx-auto my-4"></div>
+              </div>
+
+              {/* Memorial info */}
+              <div className="mb-12 max-w-3xl mx-auto">
+                <p className="text-xl text-center leading-relaxed bg-black/30 p-6 rounded-lg">
+                  Prof. Ranjit Kandar, a statistical genius, joined Kalyani
+                  University in 1982. His works showcased his brilliance, but it
+                  was his teaching that made him legendary. With unmatched
+                  clarity and kindness, he turned complex theories into simple
+                  truths, earning the love and respect of his students. His
+                  legacy endures in the hearts of his dear students. “He didn't
+                  just teach statistics,” a student once said, “he taught us how
+                  to think.” Prof.Kandar's light burned briefly but left an
+                  eternal glow.
+                </p>
+
+                <div className="text-center my-8">
+                  <h3 className="inline-block text-2xl sm:text-3xl font-bold text-white py-2 px-6 border-b-2 border-[#ffab19]">
+                    "Sample Size 1 To ∞ : A Mathematical Peculiarity"
+                  </h3>
+                </div>
+              </div>
+
+              {/* Speaker info */}
+              <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-12 bg-black/40 p-6 rounded-xl">
+                <div className="lg:w-1/3 flex flex-col items-center">
+                  <div className="relative">
+                    <div className="absolute inset-0 rounded-full border-2 border-[#ffab19] animate-ping opacity-20"></div>
+                    <img
+                      src={arindamSengupta}
+                      alt="Arindam Sengupta"
+                      className="w-56 h-56 rounded-full object-cover shadow-lg border-4 border-[#ffab19]/50"
+                    />
+                  </div>
+                  <h3 className="text-xl sm:text-2xl font-bold text-[#ffcc00] mt-4 text-center">
+                    Dr. Arindam Sengupta
+                  </h3>
+                  <p className="text-center text-gray-300 mt-1 font-light">
+                    University of Calcutta
+                  </p>
+                </div>
+
+                <div className="lg:w-2/3">
+                  <div className="border-l-4 border-[#ffab19] pl-4 mb-4 hidden lg:block">
+                    <h4 className="text-xl font-bold text-white">
+                      About the Speaker
+                    </h4>
+                  </div>
+                  <p className="text-lg leading-relaxed text-center lg:text-left">
+                    Professor Arindam Sengupta is a distinguished academic in
+                    Probability Theory, currently serving as a Professor in the
+                    Department of Statistics at the University of Calcutta. He
+                    earned his B.Stat, M.Stat, and Ph.D. from the Indian
+                    Statistical Institute, Kolkata. His research interests
+                    include Probability Theory, Asymptotic Inference, and
+                    Stochastic Processes. He has published extensively in
+                    reputed journals and has contributed to academic
+                    conferences. He has guided M.Phil and Ph.D. students and has
+                    been recognized with the NBHM Research Award. He is also
+                    actively involved in refereeing and reviewing for
+                    prestigious statistical journals.
                   </p>
                 </div>
               </div>
