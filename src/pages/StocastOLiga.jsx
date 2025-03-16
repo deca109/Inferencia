@@ -77,7 +77,7 @@ function StocastOLiga() {
       name: "The Endgame",
       tagline: "The last dance to emerge victorious",
       description:
-        "In this round, 6 topics will be shown on the screen and teams will be asked to choose one of them to have a question related to that field. The team with the highest score before this round begins gets to pick a category first, followed by the other teams in order of their scores. Before the question is read out, the adjacent next team will have a chance to challenge on the chosen topic.",
+        "In this round, 6 topics will be displayed on the screen and teams will be asked to choose one of them to answer a question related to that field. The team with the highest score before this round begins gets to pick a category first, followed by the other teams in order of their scores. Before the question is read out, the adjacent next team will have a chance to challenge the chosen topic.",
       image: endgame,
       color: "from-emerald-600/90 to-teal-900/90",
     },
